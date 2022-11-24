@@ -1,7 +1,7 @@
 import { createApi,fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 const baseQuery = fetchBaseQuery({
-    baseUrl:"https://randomuser.me",//"https://api.netigate-dev.com",
+    baseUrl:"https://randomuser.me",
     prepareHeaders:headers =>{
         const token = window.localStorage.getItem("token")
         if(token){
